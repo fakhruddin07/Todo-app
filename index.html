@@ -19,19 +19,19 @@
 <body>
     <div class="app">
         <h4>TODO APP</h4>
-        <div id="addNewTask">
+        <div onClick="openForm()" id="addNewTask">
             <span>Add new task</span>
             <i class="fa-solid fa-plus"></i>
         </div>
+        <p class="task-header">Tasks</p>
         <div id="tasks">
-            <p class="task-header">Task</p>
             <div class="task">
                 <span>Task 1</span>
                 <span>6-8-2022</span>
                 <p>this is the first task</p>
                 <span class="options">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <i class="fa-solid fa-trash-can"></i>
+                    <i onClick="editTask(this)" class="fa-solid fa-pen-to-square"></i>
+                    <i onClick="deleteTask(this)" class="fa-solid fa-trash-can"></i>
                 </span>
             </div>
         </div>
@@ -39,27 +39,30 @@
 
 
     <br><br><br><br><br>
-    <div class="popupForm">
+
+    <!-- task form -->
+    <div id="showForm" class="popupForm">
         <form action="" id="form">
             <span class="form-title">
                 <p>Add New Task</p>
-                <i class="fa-solid fa-xmark"></i>
+                <i onClick="closeForm()" class="fa-solid fa-xmark"></i>
             </span>
             <hr>
             <label for="" class="form-control">Task Title</label>
             <br><br>
-            <input type="text" name="" class="form-control" id="">
+            <input type="text" name="" class="form-control" id="input">
+            <div id="msg"></div>
             <br><br>
             <label for="" class="form-control">Due Date</label>
             <br><br>
-            <input type="date" name="" class="form-control" id="">
+            <input type="date" name="" class="form-control" id="date">
             <br><br>
             <label for="" class="form-control"> Description</label>
             <br><br>
-            <textarea class="form-control" name="" id="" cols="50" rows="10"></textarea>
+            <textarea class="form-control" name="" id="textarea" cols="50" rows="10"></textarea>
             <br><br>
             <span class="btns">
-                <button type="button" class="close-btn">Close</button>
+                <button type="button" class="close-btn" onClick="closeForm()">Close</button>
                 <button type="submit" class="add-btn">Add</button>
             </span>
         </form>

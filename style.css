@@ -17,6 +17,12 @@ body {
     background-color: #ffff;
     margin: 20px auto;
     padding: 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.app::-webkit-scrollbar {
+    width: 0 !important
 }
 
 #addNewTask {
@@ -60,6 +66,12 @@ body {
 }
 
 .popupForm {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
     background-color: #ffff;
     border-radius: 5px;
     width: 500px;
