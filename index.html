@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app">
+        <h4>TODO APP</h4>
+        <div id="addNewTask">
+            <span>Add new task</span>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div id="tasks">
+            <p class="task-header">Task</p>
+            <div class="task">
+                <span>Task 1</span>
+                <span>6-8-2022</span>
+                <p>this is the first task</p>
+                <span class="options">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br><br><br>
+    <div class="popupForm">
+        <form action="" class="task-form">
+            <span class="form-title">
+                <p>Add New Task</p>
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <hr>
+            <label for="" class="form-control">Task Title</label>
+            <br><br>
+            <input type="text" name="" class="form-control" id="">
+            <br><br>
+            <label for="" class="form-control">Due Date</label>
+            <br><br>
+            <input type="date" name="" class="form-control" id="">
+            <br><br>
+            <label for="" class="form-control"> Description</label>
+            <br><br>
+            <textarea class="form-control" name="" id="" cols="50" rows="10"></textarea>
+            <br><br>
+            <span class="btns">
+                <button type="button" class="close-btn">Close</button>
+                <button type="submit" class="add-btn">Add</button>
+            </span>
+        </form>
+    </div>
+
+
+
+
+    <!-- script -->
+    <script src="main.js"></script>
+</body>
+
+</html>

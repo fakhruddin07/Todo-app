@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: brown;
+}
+
+.app {
+    width: 300px;
+    height: 500px;
+    border: 2px solid rgb(55, 99, 95);
+    border-radius: 10px;
+    background-color: #ffff;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#addNewTask {
+    background-color: grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#tasks {
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: 20px;
+}
+
+.task-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-pen-to-square {
+    margin: 0 10px;
+}
+
+.popupForm {
+    background-color: #ffff;
+    border-radius: 5px;
+    width: 500px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.form-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin: auto;
+    padding: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btns {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 10px;
+}
+
+.add-btn {
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.close-btn {
+    background-color: #8d7f7f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
