@@ -52,6 +52,15 @@ let createTask = () => {
         </span>
     </div>
     `
+
+    resetForm();
+}
+
+
+let resetForm = () => {
+    input.value = "";
+    date.value = "";
+    textarea.value = "";
 }
 
 
